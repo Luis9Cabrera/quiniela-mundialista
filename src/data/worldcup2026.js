@@ -1,0 +1,2492 @@
+// Datos oficiales del Mundial 2026
+// Fuente: Partidos reales con resultados, fechas, horarios y estadios
+
+export const groups = {
+  "A": {
+    "name": "Grupo A",
+    "teams": [
+      {
+        "id": "MEX",
+        "name": "México",
+        "emoji": "🇲🇽"
+      },
+      {
+        "id": "RSA",
+        "name": "Sudáfrica",
+        "emoji": "🇿🇦"
+      },
+      {
+        "id": "KOR",
+        "name": "Corea del Sur",
+        "emoji": "🇰🇷"
+      },
+      {
+        "id": "CZE",
+        "name": "República Checa",
+        "emoji": "🇨🇿"
+      }
+    ]
+  },
+  "B": {
+    "name": "Grupo B",
+    "teams": [
+      {
+        "id": "CAN",
+        "name": "Canadá",
+        "emoji": "🇨🇦"
+      },
+      {
+        "id": "BIH",
+        "name": "Bosnia y Herzegovina",
+        "emoji": "🇧🇦"
+      },
+      {
+        "id": "QAT",
+        "name": "Qatar",
+        "emoji": "🇶🇦"
+      },
+      {
+        "id": "SUI",
+        "name": "Suiza",
+        "emoji": "🇨🇭"
+      }
+    ]
+  },
+  "C": {
+    "name": "Grupo C",
+    "teams": [
+      {
+        "id": "BRA",
+        "name": "Brasil",
+        "emoji": "🇧🇷"
+      },
+      {
+        "id": "MAR",
+        "name": "Marruecos",
+        "emoji": "🇲🇦"
+      },
+      {
+        "id": "HAI",
+        "name": "Haití",
+        "emoji": "🇭🇹"
+      },
+      {
+        "id": "SCO",
+        "name": "Escocia",
+        "emoji": "🏴󠁧󠁢󠁳󠁣󠁴󠁿"
+      }
+    ]
+  },
+  "D": {
+    "name": "Grupo D",
+    "teams": [
+      {
+        "id": "USA",
+        "name": "Estados Unidos",
+        "emoji": "🇺🇸"
+      },
+      {
+        "id": "PAR",
+        "name": "Paraguay",
+        "emoji": "🇵🇾"
+      },
+      {
+        "id": "AUS",
+        "name": "Australia",
+        "emoji": "🇦🇺"
+      },
+      {
+        "id": "TUR",
+        "name": "Turquía",
+        "emoji": "🇹🇷"
+      }
+    ]
+  },
+  "E": {
+    "name": "Grupo E",
+    "teams": [
+      {
+        "id": "GER",
+        "name": "Alemania",
+        "emoji": "🇩🇪"
+      },
+      {
+        "id": "CUW",
+        "name": "Curazao",
+        "emoji": "🇨🇼"
+      },
+      {
+        "id": "CIV",
+        "name": "Costa de Marfil",
+        "emoji": "🇨🇮"
+      },
+      {
+        "id": "ECU",
+        "name": "Ecuador",
+        "emoji": "🇪🇨"
+      }
+    ]
+  },
+  "F": {
+    "name": "Grupo F",
+    "teams": [
+      {
+        "id": "NED",
+        "name": "Países Bajos",
+        "emoji": "🇳🇱"
+      },
+      {
+        "id": "JPN",
+        "name": "Japón",
+        "emoji": "🇯🇵"
+      },
+      {
+        "id": "SWE",
+        "name": "Suecia",
+        "emoji": "🇸🇪"
+      },
+      {
+        "id": "TUN",
+        "name": "Túnez",
+        "emoji": "🇹🇳"
+      }
+    ]
+  },
+  "G": {
+    "name": "Grupo G",
+    "teams": [
+      {
+        "id": "BEL",
+        "name": "Bélgica",
+        "emoji": "🇧🇪"
+      },
+      {
+        "id": "EGY",
+        "name": "Egipto",
+        "emoji": "🇪🇬"
+      },
+      {
+        "id": "IRN",
+        "name": "Irán",
+        "emoji": "🇮🇷"
+      },
+      {
+        "id": "NZL",
+        "name": "Nueva Zelanda",
+        "emoji": "🇳🇿"
+      }
+    ]
+  },
+  "H": {
+    "name": "Grupo H",
+    "teams": [
+      {
+        "id": "ESP",
+        "name": "España",
+        "emoji": "🇪🇸"
+      },
+      {
+        "id": "CPV",
+        "name": "Cabo Verde",
+        "emoji": "🇨🇻"
+      },
+      {
+        "id": "KSA",
+        "name": "Arabia Saudita",
+        "emoji": "🇸🇦"
+      },
+      {
+        "id": "URU",
+        "name": "Uruguay",
+        "emoji": "🇺🇾"
+      }
+    ]
+  },
+  "I": {
+    "name": "Grupo I",
+    "teams": [
+      {
+        "id": "FRA",
+        "name": "Francia",
+        "emoji": "🇫🇷"
+      },
+      {
+        "id": "SEN",
+        "name": "Senegal",
+        "emoji": "🇸🇳"
+      },
+      {
+        "id": "IRQ",
+        "name": "Irak",
+        "emoji": "🇮🇶"
+      },
+      {
+        "id": "NOR",
+        "name": "Noruega",
+        "emoji": "🇳🇴"
+      }
+    ]
+  },
+  "J": {
+    "name": "Grupo J",
+    "teams": [
+      {
+        "id": "ARG",
+        "name": "Argentina",
+        "emoji": "🇦🇷"
+      },
+      {
+        "id": "ALG",
+        "name": "Argelia",
+        "emoji": "🇩🇿"
+      },
+      {
+        "id": "AUT",
+        "name": "Austria",
+        "emoji": "🇦🇹"
+      },
+      {
+        "id": "JOR",
+        "name": "Jordania",
+        "emoji": "🇯🇴"
+      }
+    ]
+  },
+  "K": {
+    "name": "Grupo K",
+    "teams": [
+      {
+        "id": "POR",
+        "name": "Portugal",
+        "emoji": "🇵🇹"
+      },
+      {
+        "id": "COD",
+        "name": "RD Congo",
+        "emoji": "🇨🇩"
+      },
+      {
+        "id": "UZB",
+        "name": "Uzbekistán",
+        "emoji": "🇺🇿"
+      },
+      {
+        "id": "COL",
+        "name": "Colombia",
+        "emoji": "🇨🇴"
+      }
+    ]
+  },
+  "L": {
+    "name": "Grupo L",
+    "teams": [
+      {
+        "id": "ENG",
+        "name": "Inglaterra",
+        "emoji": "🏴󠁧󠁢󠁥󠁮󠁧󠁿"
+      },
+      {
+        "id": "CRO",
+        "name": "Croacia",
+        "emoji": "🇭🇷"
+      },
+      {
+        "id": "GHA",
+        "name": "Ghana",
+        "emoji": "🇬🇭"
+      },
+      {
+        "id": "PAN",
+        "name": "Panamá",
+        "emoji": "🇵🇦"
+      }
+    ]
+  }
+};
+
+export const matches = [
+  {
+    "id": "M-001",
+    "group": "A",
+    "phase": "groups",
+    "homeTeam": {
+      "id": "MEX",
+      "name": "México",
+      "emoji": "🇲🇽"
+    },
+    "awayTeam": {
+      "id": "RSA",
+      "name": "Sudáfrica",
+      "emoji": "🇿🇦"
+    },
+    "date": "2026-06-11",
+    "time": "13:00 UTC-6",
+    "stadium": "Mexico City",
+    "homeScore": 2,
+    "awayScore": 0,
+    "status": "finished"
+  },
+  {
+    "id": "M-002",
+    "group": "A",
+    "phase": "groups",
+    "homeTeam": {
+      "id": "KOR",
+      "name": "Corea del Sur",
+      "emoji": "🇰🇷"
+    },
+    "awayTeam": {
+      "id": "CZE",
+      "name": "República Checa",
+      "emoji": "🇨🇿"
+    },
+    "date": "2026-06-11",
+    "time": "20:00 UTC-6",
+    "stadium": "Guadalajara (Zapopan)",
+    "homeScore": 2,
+    "awayScore": 1,
+    "status": "finished"
+  },
+  {
+    "id": "M-003",
+    "group": "A",
+    "phase": "groups",
+    "homeTeam": {
+      "id": "CZE",
+      "name": "República Checa",
+      "emoji": "🇨🇿"
+    },
+    "awayTeam": {
+      "id": "RSA",
+      "name": "Sudáfrica",
+      "emoji": "🇿🇦"
+    },
+    "date": "2026-06-18",
+    "time": "12:00 UTC-4",
+    "stadium": "Atlanta",
+    "homeScore": 1,
+    "awayScore": 1,
+    "status": "finished"
+  },
+  {
+    "id": "M-004",
+    "group": "A",
+    "phase": "groups",
+    "homeTeam": {
+      "id": "MEX",
+      "name": "México",
+      "emoji": "🇲🇽"
+    },
+    "awayTeam": {
+      "id": "KOR",
+      "name": "Corea del Sur",
+      "emoji": "🇰🇷"
+    },
+    "date": "2026-06-18",
+    "time": "19:00 UTC-6",
+    "stadium": "Guadalajara (Zapopan)",
+    "homeScore": 1,
+    "awayScore": 0,
+    "status": "finished"
+  },
+  {
+    "id": "M-005",
+    "group": "A",
+    "phase": "groups",
+    "homeTeam": {
+      "id": "CZE",
+      "name": "República Checa",
+      "emoji": "🇨🇿"
+    },
+    "awayTeam": {
+      "id": "MEX",
+      "name": "México",
+      "emoji": "🇲🇽"
+    },
+    "date": "2026-06-24",
+    "time": "19:00 UTC-6",
+    "stadium": "Mexico City",
+    "homeScore": null,
+    "awayScore": null,
+    "status": "pending"
+  },
+  {
+    "id": "M-006",
+    "group": "A",
+    "phase": "groups",
+    "homeTeam": {
+      "id": "RSA",
+      "name": "Sudáfrica",
+      "emoji": "🇿🇦"
+    },
+    "awayTeam": {
+      "id": "KOR",
+      "name": "Corea del Sur",
+      "emoji": "🇰🇷"
+    },
+    "date": "2026-06-24",
+    "time": "19:00 UTC-6",
+    "stadium": "Monterrey (Guadalupe)",
+    "homeScore": null,
+    "awayScore": null,
+    "status": "pending"
+  },
+  {
+    "id": "M-007",
+    "group": "B",
+    "phase": "groups",
+    "homeTeam": {
+      "id": "CAN",
+      "name": "Canadá",
+      "emoji": "🇨🇦"
+    },
+    "awayTeam": {
+      "id": "BIH",
+      "name": "Bosnia y Herzegovina",
+      "emoji": "🇧🇦"
+    },
+    "date": "2026-06-12",
+    "time": "15:00 UTC-4",
+    "stadium": "Toronto",
+    "homeScore": 1,
+    "awayScore": 1,
+    "status": "finished"
+  },
+  {
+    "id": "M-008",
+    "group": "B",
+    "phase": "groups",
+    "homeTeam": {
+      "id": "QAT",
+      "name": "Qatar",
+      "emoji": "🇶🇦"
+    },
+    "awayTeam": {
+      "id": "SUI",
+      "name": "Suiza",
+      "emoji": "🇨🇭"
+    },
+    "date": "2026-06-13",
+    "time": "12:00 UTC-7",
+    "stadium": "San Francisco Bay Area (Santa Clara)",
+    "homeScore": 1,
+    "awayScore": 1,
+    "status": "finished"
+  },
+  {
+    "id": "M-009",
+    "group": "B",
+    "phase": "groups",
+    "homeTeam": {
+      "id": "SUI",
+      "name": "Suiza",
+      "emoji": "🇨🇭"
+    },
+    "awayTeam": {
+      "id": "BIH",
+      "name": "Bosnia y Herzegovina",
+      "emoji": "🇧🇦"
+    },
+    "date": "2026-06-18",
+    "time": "12:00 UTC-7",
+    "stadium": "Los Angeles (Inglewood)",
+    "homeScore": 4,
+    "awayScore": 1,
+    "status": "finished"
+  },
+  {
+    "id": "M-010",
+    "group": "B",
+    "phase": "groups",
+    "homeTeam": {
+      "id": "CAN",
+      "name": "Canadá",
+      "emoji": "🇨🇦"
+    },
+    "awayTeam": {
+      "id": "QAT",
+      "name": "Qatar",
+      "emoji": "🇶🇦"
+    },
+    "date": "2026-06-18",
+    "time": "15:00 UTC-7",
+    "stadium": "Vancouver",
+    "homeScore": 6,
+    "awayScore": 0,
+    "status": "finished"
+  },
+  {
+    "id": "M-011",
+    "group": "B",
+    "phase": "groups",
+    "homeTeam": {
+      "id": "SUI",
+      "name": "Suiza",
+      "emoji": "🇨🇭"
+    },
+    "awayTeam": {
+      "id": "CAN",
+      "name": "Canadá",
+      "emoji": "🇨🇦"
+    },
+    "date": "2026-06-24",
+    "time": "12:00 UTC-7",
+    "stadium": "Vancouver",
+    "homeScore": null,
+    "awayScore": null,
+    "status": "pending"
+  },
+  {
+    "id": "M-012",
+    "group": "B",
+    "phase": "groups",
+    "homeTeam": {
+      "id": "BIH",
+      "name": "Bosnia y Herzegovina",
+      "emoji": "🇧🇦"
+    },
+    "awayTeam": {
+      "id": "QAT",
+      "name": "Qatar",
+      "emoji": "🇶🇦"
+    },
+    "date": "2026-06-24",
+    "time": "12:00 UTC-7",
+    "stadium": "Seattle",
+    "homeScore": null,
+    "awayScore": null,
+    "status": "pending"
+  },
+  {
+    "id": "M-013",
+    "group": "C",
+    "phase": "groups",
+    "homeTeam": {
+      "id": "BRA",
+      "name": "Brasil",
+      "emoji": "🇧🇷"
+    },
+    "awayTeam": {
+      "id": "MAR",
+      "name": "Marruecos",
+      "emoji": "🇲🇦"
+    },
+    "date": "2026-06-13",
+    "time": "18:00 UTC-4",
+    "stadium": "New York/New Jersey (East Rutherford)",
+    "homeScore": 1,
+    "awayScore": 1,
+    "status": "finished"
+  },
+  {
+    "id": "M-014",
+    "group": "C",
+    "phase": "groups",
+    "homeTeam": {
+      "id": "HAI",
+      "name": "Haití",
+      "emoji": "🇭🇹"
+    },
+    "awayTeam": {
+      "id": "SCO",
+      "name": "Escocia",
+      "emoji": "🏴󠁧󠁢󠁳󠁣󠁴󠁿"
+    },
+    "date": "2026-06-13",
+    "time": "21:00 UTC-4",
+    "stadium": "Boston (Foxborough)",
+    "homeScore": 0,
+    "awayScore": 1,
+    "status": "finished"
+  },
+  {
+    "id": "M-015",
+    "group": "C",
+    "phase": "groups",
+    "homeTeam": {
+      "id": "SCO",
+      "name": "Escocia",
+      "emoji": "🏴󠁧󠁢󠁳󠁣󠁴󠁿"
+    },
+    "awayTeam": {
+      "id": "MAR",
+      "name": "Marruecos",
+      "emoji": "🇲🇦"
+    },
+    "date": "2026-06-19",
+    "time": "18:00 UTC-4",
+    "stadium": "Boston (Foxborough)",
+    "homeScore": 0,
+    "awayScore": 1,
+    "status": "finished"
+  },
+  {
+    "id": "M-016",
+    "group": "C",
+    "phase": "groups",
+    "homeTeam": {
+      "id": "BRA",
+      "name": "Brasil",
+      "emoji": "🇧🇷"
+    },
+    "awayTeam": {
+      "id": "HAI",
+      "name": "Haití",
+      "emoji": "🇭🇹"
+    },
+    "date": "2026-06-19",
+    "time": "20:30 UTC-4",
+    "stadium": "Philadelphia",
+    "homeScore": 3,
+    "awayScore": 0,
+    "status": "finished"
+  },
+  {
+    "id": "M-017",
+    "group": "C",
+    "phase": "groups",
+    "homeTeam": {
+      "id": "SCO",
+      "name": "Escocia",
+      "emoji": "🏴󠁧󠁢󠁳󠁣󠁴󠁿"
+    },
+    "awayTeam": {
+      "id": "BRA",
+      "name": "Brasil",
+      "emoji": "🇧🇷"
+    },
+    "date": "2026-06-24",
+    "time": "18:00 UTC-4",
+    "stadium": "Miami (Miami Gardens)",
+    "homeScore": null,
+    "awayScore": null,
+    "status": "pending"
+  },
+  {
+    "id": "M-018",
+    "group": "C",
+    "phase": "groups",
+    "homeTeam": {
+      "id": "MAR",
+      "name": "Marruecos",
+      "emoji": "🇲🇦"
+    },
+    "awayTeam": {
+      "id": "HAI",
+      "name": "Haití",
+      "emoji": "🇭🇹"
+    },
+    "date": "2026-06-24",
+    "time": "18:00 UTC-4",
+    "stadium": "Atlanta",
+    "homeScore": null,
+    "awayScore": null,
+    "status": "pending"
+  },
+  {
+    "id": "M-019",
+    "group": "D",
+    "phase": "groups",
+    "homeTeam": {
+      "id": "USA",
+      "name": "Estados Unidos",
+      "emoji": "🇺🇸"
+    },
+    "awayTeam": {
+      "id": "PAR",
+      "name": "Paraguay",
+      "emoji": "🇵🇾"
+    },
+    "date": "2026-06-12",
+    "time": "18:00 UTC-7",
+    "stadium": "Los Angeles (Inglewood)",
+    "homeScore": 4,
+    "awayScore": 1,
+    "status": "finished"
+  },
+  {
+    "id": "M-020",
+    "group": "D",
+    "phase": "groups",
+    "homeTeam": {
+      "id": "AUS",
+      "name": "Australia",
+      "emoji": "🇦🇺"
+    },
+    "awayTeam": {
+      "id": "TUR",
+      "name": "Turquía",
+      "emoji": "🇹🇷"
+    },
+    "date": "2026-06-13",
+    "time": "21:00 UTC-7",
+    "stadium": "Vancouver",
+    "homeScore": 2,
+    "awayScore": 0,
+    "status": "finished"
+  },
+  {
+    "id": "M-021",
+    "group": "D",
+    "phase": "groups",
+    "homeTeam": {
+      "id": "USA",
+      "name": "Estados Unidos",
+      "emoji": "🇺🇸"
+    },
+    "awayTeam": {
+      "id": "AUS",
+      "name": "Australia",
+      "emoji": "🇦🇺"
+    },
+    "date": "2026-06-19",
+    "time": "12:00 UTC-7",
+    "stadium": "Seattle",
+    "homeScore": 2,
+    "awayScore": 0,
+    "status": "finished"
+  },
+  {
+    "id": "M-022",
+    "group": "D",
+    "phase": "groups",
+    "homeTeam": {
+      "id": "TUR",
+      "name": "Turquía",
+      "emoji": "🇹🇷"
+    },
+    "awayTeam": {
+      "id": "PAR",
+      "name": "Paraguay",
+      "emoji": "🇵🇾"
+    },
+    "date": "2026-06-19",
+    "time": "20:00 UTC-7",
+    "stadium": "San Francisco Bay Area (Santa Clara)",
+    "homeScore": 0,
+    "awayScore": 1,
+    "status": "finished"
+  },
+  {
+    "id": "M-023",
+    "group": "D",
+    "phase": "groups",
+    "homeTeam": {
+      "id": "TUR",
+      "name": "Turquía",
+      "emoji": "🇹🇷"
+    },
+    "awayTeam": {
+      "id": "USA",
+      "name": "Estados Unidos",
+      "emoji": "🇺🇸"
+    },
+    "date": "2026-06-25",
+    "time": "19:00 UTC-7",
+    "stadium": "Los Angeles (Inglewood)",
+    "homeScore": null,
+    "awayScore": null,
+    "status": "pending"
+  },
+  {
+    "id": "M-024",
+    "group": "D",
+    "phase": "groups",
+    "homeTeam": {
+      "id": "PAR",
+      "name": "Paraguay",
+      "emoji": "🇵🇾"
+    },
+    "awayTeam": {
+      "id": "AUS",
+      "name": "Australia",
+      "emoji": "🇦🇺"
+    },
+    "date": "2026-06-25",
+    "time": "19:00 UTC-7",
+    "stadium": "San Francisco Bay Area (Santa Clara)",
+    "homeScore": null,
+    "awayScore": null,
+    "status": "pending"
+  },
+  {
+    "id": "M-025",
+    "group": "E",
+    "phase": "groups",
+    "homeTeam": {
+      "id": "GER",
+      "name": "Alemania",
+      "emoji": "🇩🇪"
+    },
+    "awayTeam": {
+      "id": "CUW",
+      "name": "Curazao",
+      "emoji": "🇨🇼"
+    },
+    "date": "2026-06-14",
+    "time": "12:00 UTC-5",
+    "stadium": "Houston",
+    "homeScore": 7,
+    "awayScore": 1,
+    "status": "finished"
+  },
+  {
+    "id": "M-026",
+    "group": "E",
+    "phase": "groups",
+    "homeTeam": {
+      "id": "CIV",
+      "name": "Costa de Marfil",
+      "emoji": "🇨🇮"
+    },
+    "awayTeam": {
+      "id": "ECU",
+      "name": "Ecuador",
+      "emoji": "🇪🇨"
+    },
+    "date": "2026-06-14",
+    "time": "19:00 UTC-4",
+    "stadium": "Philadelphia",
+    "homeScore": 1,
+    "awayScore": 0,
+    "status": "finished"
+  },
+  {
+    "id": "M-027",
+    "group": "E",
+    "phase": "groups",
+    "homeTeam": {
+      "id": "GER",
+      "name": "Alemania",
+      "emoji": "🇩🇪"
+    },
+    "awayTeam": {
+      "id": "CIV",
+      "name": "Costa de Marfil",
+      "emoji": "🇨🇮"
+    },
+    "date": "2026-06-20",
+    "time": "16:00 UTC-4",
+    "stadium": "Toronto",
+    "homeScore": 2,
+    "awayScore": 1,
+    "status": "finished"
+  },
+  {
+    "id": "M-028",
+    "group": "E",
+    "phase": "groups",
+    "homeTeam": {
+      "id": "ECU",
+      "name": "Ecuador",
+      "emoji": "🇪🇨"
+    },
+    "awayTeam": {
+      "id": "CUW",
+      "name": "Curazao",
+      "emoji": "🇨🇼"
+    },
+    "date": "2026-06-20",
+    "time": "19:00 UTC-5",
+    "stadium": "Kansas City",
+    "homeScore": 0,
+    "awayScore": 0,
+    "status": "finished"
+  },
+  {
+    "id": "M-029",
+    "group": "E",
+    "phase": "groups",
+    "homeTeam": {
+      "id": "CUW",
+      "name": "Curazao",
+      "emoji": "🇨🇼"
+    },
+    "awayTeam": {
+      "id": "CIV",
+      "name": "Costa de Marfil",
+      "emoji": "🇨🇮"
+    },
+    "date": "2026-06-25",
+    "time": "16:00 UTC-4",
+    "stadium": "Philadelphia",
+    "homeScore": null,
+    "awayScore": null,
+    "status": "pending"
+  },
+  {
+    "id": "M-030",
+    "group": "E",
+    "phase": "groups",
+    "homeTeam": {
+      "id": "ECU",
+      "name": "Ecuador",
+      "emoji": "🇪🇨"
+    },
+    "awayTeam": {
+      "id": "GER",
+      "name": "Alemania",
+      "emoji": "🇩🇪"
+    },
+    "date": "2026-06-25",
+    "time": "16:00 UTC-4",
+    "stadium": "New York/New Jersey (East Rutherford)",
+    "homeScore": null,
+    "awayScore": null,
+    "status": "pending"
+  },
+  {
+    "id": "M-031",
+    "group": "F",
+    "phase": "groups",
+    "homeTeam": {
+      "id": "NED",
+      "name": "Países Bajos",
+      "emoji": "🇳🇱"
+    },
+    "awayTeam": {
+      "id": "JPN",
+      "name": "Japón",
+      "emoji": "🇯🇵"
+    },
+    "date": "2026-06-14",
+    "time": "15:00 UTC-5",
+    "stadium": "Dallas (Arlington)",
+    "homeScore": 2,
+    "awayScore": 2,
+    "status": "finished"
+  },
+  {
+    "id": "M-032",
+    "group": "F",
+    "phase": "groups",
+    "homeTeam": {
+      "id": "SWE",
+      "name": "Suecia",
+      "emoji": "🇸🇪"
+    },
+    "awayTeam": {
+      "id": "TUN",
+      "name": "Túnez",
+      "emoji": "🇹🇳"
+    },
+    "date": "2026-06-14",
+    "time": "20:00 UTC-6",
+    "stadium": "Monterrey (Guadalupe)",
+    "homeScore": 5,
+    "awayScore": 1,
+    "status": "finished"
+  },
+  {
+    "id": "M-033",
+    "group": "F",
+    "phase": "groups",
+    "homeTeam": {
+      "id": "NED",
+      "name": "Países Bajos",
+      "emoji": "🇳🇱"
+    },
+    "awayTeam": {
+      "id": "SWE",
+      "name": "Suecia",
+      "emoji": "🇸🇪"
+    },
+    "date": "2026-06-20",
+    "time": "12:00 UTC-5",
+    "stadium": "Houston",
+    "homeScore": 5,
+    "awayScore": 1,
+    "status": "finished"
+  },
+  {
+    "id": "M-034",
+    "group": "F",
+    "phase": "groups",
+    "homeTeam": {
+      "id": "TUN",
+      "name": "Túnez",
+      "emoji": "🇹🇳"
+    },
+    "awayTeam": {
+      "id": "JPN",
+      "name": "Japón",
+      "emoji": "🇯🇵"
+    },
+    "date": "2026-06-20",
+    "time": "22:00 UTC-6",
+    "stadium": "Monterrey (Guadalupe)",
+    "homeScore": 0,
+    "awayScore": 4,
+    "status": "finished"
+  },
+  {
+    "id": "M-035",
+    "group": "F",
+    "phase": "groups",
+    "homeTeam": {
+      "id": "JPN",
+      "name": "Japón",
+      "emoji": "🇯🇵"
+    },
+    "awayTeam": {
+      "id": "SWE",
+      "name": "Suecia",
+      "emoji": "🇸🇪"
+    },
+    "date": "2026-06-25",
+    "time": "18:00 UTC-5",
+    "stadium": "Dallas (Arlington)",
+    "homeScore": null,
+    "awayScore": null,
+    "status": "pending"
+  },
+  {
+    "id": "M-036",
+    "group": "F",
+    "phase": "groups",
+    "homeTeam": {
+      "id": "TUN",
+      "name": "Túnez",
+      "emoji": "🇹🇳"
+    },
+    "awayTeam": {
+      "id": "NED",
+      "name": "Países Bajos",
+      "emoji": "🇳🇱"
+    },
+    "date": "2026-06-25",
+    "time": "18:00 UTC-5",
+    "stadium": "Kansas City",
+    "homeScore": null,
+    "awayScore": null,
+    "status": "pending"
+  },
+  {
+    "id": "M-037",
+    "group": "G",
+    "phase": "groups",
+    "homeTeam": {
+      "id": "BEL",
+      "name": "Bélgica",
+      "emoji": "🇧🇪"
+    },
+    "awayTeam": {
+      "id": "EGY",
+      "name": "Egipto",
+      "emoji": "🇪🇬"
+    },
+    "date": "2026-06-15",
+    "time": "12:00 UTC-7",
+    "stadium": "Seattle",
+    "homeScore": 1,
+    "awayScore": 1,
+    "status": "finished"
+  },
+  {
+    "id": "M-038",
+    "group": "G",
+    "phase": "groups",
+    "homeTeam": {
+      "id": "IRN",
+      "name": "Irán",
+      "emoji": "🇮🇷"
+    },
+    "awayTeam": {
+      "id": "NZL",
+      "name": "Nueva Zelanda",
+      "emoji": "🇳🇿"
+    },
+    "date": "2026-06-15",
+    "time": "18:00 UTC-7",
+    "stadium": "Los Angeles (Inglewood)",
+    "homeScore": 2,
+    "awayScore": 2,
+    "status": "finished"
+  },
+  {
+    "id": "M-039",
+    "group": "G",
+    "phase": "groups",
+    "homeTeam": {
+      "id": "BEL",
+      "name": "Bélgica",
+      "emoji": "🇧🇪"
+    },
+    "awayTeam": {
+      "id": "IRN",
+      "name": "Irán",
+      "emoji": "🇮🇷"
+    },
+    "date": "2026-06-21",
+    "time": "12:00 UTC-7",
+    "stadium": "Los Angeles (Inglewood)",
+    "homeScore": 0,
+    "awayScore": 0,
+    "status": "finished"
+  },
+  {
+    "id": "M-040",
+    "group": "G",
+    "phase": "groups",
+    "homeTeam": {
+      "id": "NZL",
+      "name": "Nueva Zelanda",
+      "emoji": "🇳🇿"
+    },
+    "awayTeam": {
+      "id": "EGY",
+      "name": "Egipto",
+      "emoji": "🇪🇬"
+    },
+    "date": "2026-06-21",
+    "time": "18:00 UTC-7",
+    "stadium": "Vancouver",
+    "homeScore": 1,
+    "awayScore": 3,
+    "status": "finished"
+  },
+  {
+    "id": "M-041",
+    "group": "G",
+    "phase": "groups",
+    "homeTeam": {
+      "id": "EGY",
+      "name": "Egipto",
+      "emoji": "🇪🇬"
+    },
+    "awayTeam": {
+      "id": "IRN",
+      "name": "Irán",
+      "emoji": "🇮🇷"
+    },
+    "date": "2026-06-26",
+    "time": "20:00 UTC-7",
+    "stadium": "Seattle",
+    "homeScore": null,
+    "awayScore": null,
+    "status": "pending"
+  },
+  {
+    "id": "M-042",
+    "group": "G",
+    "phase": "groups",
+    "homeTeam": {
+      "id": "NZL",
+      "name": "Nueva Zelanda",
+      "emoji": "🇳🇿"
+    },
+    "awayTeam": {
+      "id": "BEL",
+      "name": "Bélgica",
+      "emoji": "🇧🇪"
+    },
+    "date": "2026-06-26",
+    "time": "20:00 UTC-7",
+    "stadium": "Vancouver",
+    "homeScore": null,
+    "awayScore": null,
+    "status": "pending"
+  },
+  {
+    "id": "M-043",
+    "group": "H",
+    "phase": "groups",
+    "homeTeam": {
+      "id": "ESP",
+      "name": "España",
+      "emoji": "🇪🇸"
+    },
+    "awayTeam": {
+      "id": "CPV",
+      "name": "Cabo Verde",
+      "emoji": "🇨🇻"
+    },
+    "date": "2026-06-15",
+    "time": "12:00 UTC-4",
+    "stadium": "Atlanta",
+    "homeScore": 0,
+    "awayScore": 0,
+    "status": "finished"
+  },
+  {
+    "id": "M-044",
+    "group": "H",
+    "phase": "groups",
+    "homeTeam": {
+      "id": "KSA",
+      "name": "Arabia Saudita",
+      "emoji": "🇸🇦"
+    },
+    "awayTeam": {
+      "id": "URU",
+      "name": "Uruguay",
+      "emoji": "🇺🇾"
+    },
+    "date": "2026-06-15",
+    "time": "18:00 UTC-4",
+    "stadium": "Miami (Miami Gardens)",
+    "homeScore": 1,
+    "awayScore": 1,
+    "status": "finished"
+  },
+  {
+    "id": "M-045",
+    "group": "H",
+    "phase": "groups",
+    "homeTeam": {
+      "id": "ESP",
+      "name": "España",
+      "emoji": "🇪🇸"
+    },
+    "awayTeam": {
+      "id": "KSA",
+      "name": "Arabia Saudita",
+      "emoji": "🇸🇦"
+    },
+    "date": "2026-06-21",
+    "time": "12:00 UTC-4",
+    "stadium": "Atlanta",
+    "homeScore": 4,
+    "awayScore": 0,
+    "status": "finished"
+  },
+  {
+    "id": "M-046",
+    "group": "H",
+    "phase": "groups",
+    "homeTeam": {
+      "id": "URU",
+      "name": "Uruguay",
+      "emoji": "🇺🇾"
+    },
+    "awayTeam": {
+      "id": "CPV",
+      "name": "Cabo Verde",
+      "emoji": "🇨🇻"
+    },
+    "date": "2026-06-21",
+    "time": "18:00 UTC-4",
+    "stadium": "Miami (Miami Gardens)",
+    "homeScore": 2,
+    "awayScore": 2,
+    "status": "finished"
+  },
+  {
+    "id": "M-047",
+    "group": "H",
+    "phase": "groups",
+    "homeTeam": {
+      "id": "CPV",
+      "name": "Cabo Verde",
+      "emoji": "🇨🇻"
+    },
+    "awayTeam": {
+      "id": "KSA",
+      "name": "Arabia Saudita",
+      "emoji": "🇸🇦"
+    },
+    "date": "2026-06-26",
+    "time": "19:00 UTC-5",
+    "stadium": "Houston",
+    "homeScore": null,
+    "awayScore": null,
+    "status": "pending"
+  },
+  {
+    "id": "M-048",
+    "group": "H",
+    "phase": "groups",
+    "homeTeam": {
+      "id": "URU",
+      "name": "Uruguay",
+      "emoji": "🇺🇾"
+    },
+    "awayTeam": {
+      "id": "ESP",
+      "name": "España",
+      "emoji": "🇪🇸"
+    },
+    "date": "2026-06-26",
+    "time": "18:00 UTC-6",
+    "stadium": "Guadalajara (Zapopan)",
+    "homeScore": null,
+    "awayScore": null,
+    "status": "pending"
+  },
+  {
+    "id": "M-049",
+    "group": "I",
+    "phase": "groups",
+    "homeTeam": {
+      "id": "FRA",
+      "name": "Francia",
+      "emoji": "🇫🇷"
+    },
+    "awayTeam": {
+      "id": "SEN",
+      "name": "Senegal",
+      "emoji": "🇸🇳"
+    },
+    "date": "2026-06-16",
+    "time": "15:00 UTC-4",
+    "stadium": "New York/New Jersey (East Rutherford)",
+    "homeScore": 3,
+    "awayScore": 1,
+    "status": "finished"
+  },
+  {
+    "id": "M-050",
+    "group": "I",
+    "phase": "groups",
+    "homeTeam": {
+      "id": "IRQ",
+      "name": "Irak",
+      "emoji": "🇮🇶"
+    },
+    "awayTeam": {
+      "id": "NOR",
+      "name": "Noruega",
+      "emoji": "🇳🇴"
+    },
+    "date": "2026-06-16",
+    "time": "18:00 UTC-4",
+    "stadium": "Boston (Foxborough)",
+    "homeScore": 1,
+    "awayScore": 4,
+    "status": "finished"
+  },
+  {
+    "id": "M-051",
+    "group": "I",
+    "phase": "groups",
+    "homeTeam": {
+      "id": "FRA",
+      "name": "Francia",
+      "emoji": "🇫🇷"
+    },
+    "awayTeam": {
+      "id": "IRQ",
+      "name": "Irak",
+      "emoji": "🇮🇶"
+    },
+    "date": "2026-06-22",
+    "time": "17:00 UTC-4",
+    "stadium": "Philadelphia",
+    "homeScore": 3,
+    "awayScore": 0,
+    "status": "finished"
+  },
+  {
+    "id": "M-052",
+    "group": "I",
+    "phase": "groups",
+    "homeTeam": {
+      "id": "NOR",
+      "name": "Noruega",
+      "emoji": "🇳🇴"
+    },
+    "awayTeam": {
+      "id": "SEN",
+      "name": "Senegal",
+      "emoji": "🇸🇳"
+    },
+    "date": "2026-06-22",
+    "time": "20:00 UTC-4",
+    "stadium": "New York/New Jersey (East Rutherford)",
+    "homeScore": 3,
+    "awayScore": 2,
+    "status": "finished"
+  },
+  {
+    "id": "M-053",
+    "group": "I",
+    "phase": "groups",
+    "homeTeam": {
+      "id": "NOR",
+      "name": "Noruega",
+      "emoji": "🇳🇴"
+    },
+    "awayTeam": {
+      "id": "FRA",
+      "name": "Francia",
+      "emoji": "🇫🇷"
+    },
+    "date": "2026-06-26",
+    "time": "15:00 UTC-4",
+    "stadium": "Boston (Foxborough)",
+    "homeScore": null,
+    "awayScore": null,
+    "status": "pending"
+  },
+  {
+    "id": "M-054",
+    "group": "I",
+    "phase": "groups",
+    "homeTeam": {
+      "id": "SEN",
+      "name": "Senegal",
+      "emoji": "🇸🇳"
+    },
+    "awayTeam": {
+      "id": "IRQ",
+      "name": "Irak",
+      "emoji": "🇮🇶"
+    },
+    "date": "2026-06-26",
+    "time": "15:00 UTC-4",
+    "stadium": "Toronto",
+    "homeScore": null,
+    "awayScore": null,
+    "status": "pending"
+  },
+  {
+    "id": "M-055",
+    "group": "J",
+    "phase": "groups",
+    "homeTeam": {
+      "id": "ARG",
+      "name": "Argentina",
+      "emoji": "🇦🇷"
+    },
+    "awayTeam": {
+      "id": "ALG",
+      "name": "Argelia",
+      "emoji": "🇩🇿"
+    },
+    "date": "2026-06-16",
+    "time": "20:00 UTC-5",
+    "stadium": "Kansas City",
+    "homeScore": 3,
+    "awayScore": 0,
+    "status": "finished"
+  },
+  {
+    "id": "M-056",
+    "group": "J",
+    "phase": "groups",
+    "homeTeam": {
+      "id": "AUT",
+      "name": "Austria",
+      "emoji": "🇦🇹"
+    },
+    "awayTeam": {
+      "id": "JOR",
+      "name": "Jordania",
+      "emoji": "🇯🇴"
+    },
+    "date": "2026-06-16",
+    "time": "21:00 UTC-7",
+    "stadium": "San Francisco Bay Area (Santa Clara)",
+    "homeScore": 3,
+    "awayScore": 1,
+    "status": "finished"
+  },
+  {
+    "id": "M-057",
+    "group": "J",
+    "phase": "groups",
+    "homeTeam": {
+      "id": "ARG",
+      "name": "Argentina",
+      "emoji": "🇦🇷"
+    },
+    "awayTeam": {
+      "id": "AUT",
+      "name": "Austria",
+      "emoji": "🇦🇹"
+    },
+    "date": "2026-06-22",
+    "time": "12:00 UTC-5",
+    "stadium": "Dallas (Arlington)",
+    "homeScore": 2,
+    "awayScore": 0,
+    "status": "finished"
+  },
+  {
+    "id": "M-058",
+    "group": "J",
+    "phase": "groups",
+    "homeTeam": {
+      "id": "JOR",
+      "name": "Jordania",
+      "emoji": "🇯🇴"
+    },
+    "awayTeam": {
+      "id": "ALG",
+      "name": "Argelia",
+      "emoji": "🇩🇿"
+    },
+    "date": "2026-06-22",
+    "time": "20:00 UTC-7",
+    "stadium": "San Francisco Bay Area (Santa Clara)",
+    "homeScore": 1,
+    "awayScore": 2,
+    "status": "finished"
+  },
+  {
+    "id": "M-059",
+    "group": "J",
+    "phase": "groups",
+    "homeTeam": {
+      "id": "ALG",
+      "name": "Argelia",
+      "emoji": "🇩🇿"
+    },
+    "awayTeam": {
+      "id": "AUT",
+      "name": "Austria",
+      "emoji": "🇦🇹"
+    },
+    "date": "2026-06-27",
+    "time": "21:00 UTC-5",
+    "stadium": "Kansas City",
+    "homeScore": null,
+    "awayScore": null,
+    "status": "pending"
+  },
+  {
+    "id": "M-060",
+    "group": "J",
+    "phase": "groups",
+    "homeTeam": {
+      "id": "JOR",
+      "name": "Jordania",
+      "emoji": "🇯🇴"
+    },
+    "awayTeam": {
+      "id": "ARG",
+      "name": "Argentina",
+      "emoji": "🇦🇷"
+    },
+    "date": "2026-06-27",
+    "time": "21:00 UTC-5",
+    "stadium": "Dallas (Arlington)",
+    "homeScore": null,
+    "awayScore": null,
+    "status": "pending"
+  },
+  {
+    "id": "M-061",
+    "group": "K",
+    "phase": "groups",
+    "homeTeam": {
+      "id": "POR",
+      "name": "Portugal",
+      "emoji": "🇵🇹"
+    },
+    "awayTeam": {
+      "id": "COD",
+      "name": "RD Congo",
+      "emoji": "🇨🇩"
+    },
+    "date": "2026-06-17",
+    "time": "12:00 UTC-5",
+    "stadium": "Houston",
+    "homeScore": 1,
+    "awayScore": 1,
+    "status": "finished"
+  },
+  {
+    "id": "M-062",
+    "group": "K",
+    "phase": "groups",
+    "homeTeam": {
+      "id": "UZB",
+      "name": "Uzbekistán",
+      "emoji": "🇺🇿"
+    },
+    "awayTeam": {
+      "id": "COL",
+      "name": "Colombia",
+      "emoji": "🇨🇴"
+    },
+    "date": "2026-06-17",
+    "time": "20:00 UTC-6",
+    "stadium": "Mexico City",
+    "homeScore": 1,
+    "awayScore": 3,
+    "status": "finished"
+  },
+  {
+    "id": "M-063",
+    "group": "K",
+    "phase": "groups",
+    "homeTeam": {
+      "id": "POR",
+      "name": "Portugal",
+      "emoji": "🇵🇹"
+    },
+    "awayTeam": {
+      "id": "UZB",
+      "name": "Uzbekistán",
+      "emoji": "🇺🇿"
+    },
+    "date": "2026-06-23",
+    "time": "12:00 UTC-5",
+    "stadium": "Houston",
+    "homeScore": 5,
+    "awayScore": 0,
+    "status": "finished"
+  },
+  {
+    "id": "M-064",
+    "group": "K",
+    "phase": "groups",
+    "homeTeam": {
+      "id": "COL",
+      "name": "Colombia",
+      "emoji": "🇨🇴"
+    },
+    "awayTeam": {
+      "id": "COD",
+      "name": "RD Congo",
+      "emoji": "🇨🇩"
+    },
+    "date": "2026-06-23",
+    "time": "20:00 UTC-6",
+    "stadium": "Guadalajara (Zapopan)",
+    "homeScore": 1,
+    "awayScore": 0,
+    "status": "finished"
+  },
+  {
+    "id": "M-065",
+    "group": "K",
+    "phase": "groups",
+    "homeTeam": {
+      "id": "COL",
+      "name": "Colombia",
+      "emoji": "🇨🇴"
+    },
+    "awayTeam": {
+      "id": "POR",
+      "name": "Portugal",
+      "emoji": "🇵🇹"
+    },
+    "date": "2026-06-27",
+    "time": "19:30 UTC-4",
+    "stadium": "Miami (Miami Gardens)",
+    "homeScore": null,
+    "awayScore": null,
+    "status": "pending"
+  },
+  {
+    "id": "M-066",
+    "group": "K",
+    "phase": "groups",
+    "homeTeam": {
+      "id": "COD",
+      "name": "RD Congo",
+      "emoji": "🇨🇩"
+    },
+    "awayTeam": {
+      "id": "UZB",
+      "name": "Uzbekistán",
+      "emoji": "🇺🇿"
+    },
+    "date": "2026-06-27",
+    "time": "19:30 UTC-4",
+    "stadium": "Atlanta",
+    "homeScore": null,
+    "awayScore": null,
+    "status": "pending"
+  },
+  {
+    "id": "M-067",
+    "group": "L",
+    "phase": "groups",
+    "homeTeam": {
+      "id": "ENG",
+      "name": "Inglaterra",
+      "emoji": "🏴󠁧󠁢󠁥󠁮󠁧󠁿"
+    },
+    "awayTeam": {
+      "id": "CRO",
+      "name": "Croacia",
+      "emoji": "🇭🇷"
+    },
+    "date": "2026-06-17",
+    "time": "15:00 UTC-5",
+    "stadium": "Dallas (Arlington)",
+    "homeScore": 4,
+    "awayScore": 2,
+    "status": "finished"
+  },
+  {
+    "id": "M-068",
+    "group": "L",
+    "phase": "groups",
+    "homeTeam": {
+      "id": "GHA",
+      "name": "Ghana",
+      "emoji": "🇬🇭"
+    },
+    "awayTeam": {
+      "id": "PAN",
+      "name": "Panamá",
+      "emoji": "🇵🇦"
+    },
+    "date": "2026-06-17",
+    "time": "19:00 UTC-4",
+    "stadium": "Toronto",
+    "homeScore": 1,
+    "awayScore": 0,
+    "status": "finished"
+  },
+  {
+    "id": "M-069",
+    "group": "L",
+    "phase": "groups",
+    "homeTeam": {
+      "id": "ENG",
+      "name": "Inglaterra",
+      "emoji": "🏴󠁧󠁢󠁥󠁮󠁧󠁿"
+    },
+    "awayTeam": {
+      "id": "GHA",
+      "name": "Ghana",
+      "emoji": "🇬🇭"
+    },
+    "date": "2026-06-23",
+    "time": "16:00 UTC-4",
+    "stadium": "Boston (Foxborough)",
+    "homeScore": 0,
+    "awayScore": 0,
+    "status": "finished"
+  },
+  {
+    "id": "M-070",
+    "group": "L",
+    "phase": "groups",
+    "homeTeam": {
+      "id": "PAN",
+      "name": "Panamá",
+      "emoji": "🇵🇦"
+    },
+    "awayTeam": {
+      "id": "CRO",
+      "name": "Croacia",
+      "emoji": "🇭🇷"
+    },
+    "date": "2026-06-23",
+    "time": "19:00 UTC-4",
+    "stadium": "Toronto",
+    "homeScore": 0,
+    "awayScore": 1,
+    "status": "finished"
+  },
+  {
+    "id": "M-071",
+    "group": "L",
+    "phase": "groups",
+    "homeTeam": {
+      "id": "PAN",
+      "name": "Panamá",
+      "emoji": "🇵🇦"
+    },
+    "awayTeam": {
+      "id": "ENG",
+      "name": "Inglaterra",
+      "emoji": "🏴󠁧󠁢󠁥󠁮󠁧󠁿"
+    },
+    "date": "2026-06-27",
+    "time": "17:00 UTC-4",
+    "stadium": "New York/New Jersey (East Rutherford)",
+    "homeScore": null,
+    "awayScore": null,
+    "status": "pending"
+  },
+  {
+    "id": "M-072",
+    "group": "L",
+    "phase": "groups",
+    "homeTeam": {
+      "id": "CRO",
+      "name": "Croacia",
+      "emoji": "🇭🇷"
+    },
+    "awayTeam": {
+      "id": "GHA",
+      "name": "Ghana",
+      "emoji": "🇬🇭"
+    },
+    "date": "2026-06-27",
+    "time": "17:00 UTC-4",
+    "stadium": "Philadelphia",
+    "homeScore": null,
+    "awayScore": null,
+    "status": "pending"
+  },
+  {
+    "id": "KO-r32-73",
+    "group": null,
+    "phase": "r32",
+    "homeTeam": {
+      "id": "H-r32-73",
+      "name": "2A",
+      "emoji": "🏳️"
+    },
+    "awayTeam": {
+      "id": "A-r32-73",
+      "name": "2B",
+      "emoji": "🏳️"
+    },
+    "date": "2026-06-28",
+    "time": "12:00 UTC-7",
+    "stadium": "Los Angeles (Inglewood)",
+    "homeScore": null,
+    "awayScore": null,
+    "status": "pending"
+  },
+  {
+    "id": "KO-r32-74",
+    "group": null,
+    "phase": "r32",
+    "homeTeam": {
+      "id": "GER",
+      "name": "Alemania",
+      "emoji": "🇩🇪"
+    },
+    "awayTeam": {
+      "id": "A-r32-74",
+      "name": "3A/B/C/D/F",
+      "emoji": "🏳️"
+    },
+    "date": "2026-06-29",
+    "time": "16:30 UTC-4",
+    "stadium": "Boston (Foxborough)",
+    "homeScore": null,
+    "awayScore": null,
+    "status": "pending"
+  },
+  {
+    "id": "KO-r32-75",
+    "group": null,
+    "phase": "r32",
+    "homeTeam": {
+      "id": "H-r32-75",
+      "name": "1F",
+      "emoji": "🏳️"
+    },
+    "awayTeam": {
+      "id": "A-r32-75",
+      "name": "2C",
+      "emoji": "🏳️"
+    },
+    "date": "2026-06-29",
+    "time": "19:00 UTC-6",
+    "stadium": "Monterrey (Guadalupe)",
+    "homeScore": null,
+    "awayScore": null,
+    "status": "pending"
+  },
+  {
+    "id": "KO-r32-76",
+    "group": null,
+    "phase": "r32",
+    "homeTeam": {
+      "id": "H-r32-76",
+      "name": "1C",
+      "emoji": "🏳️"
+    },
+    "awayTeam": {
+      "id": "A-r32-76",
+      "name": "2F",
+      "emoji": "🏳️"
+    },
+    "date": "2026-06-29",
+    "time": "12:00 UTC-5",
+    "stadium": "Houston",
+    "homeScore": null,
+    "awayScore": null,
+    "status": "pending"
+  },
+  {
+    "id": "KO-r32-77",
+    "group": null,
+    "phase": "r32",
+    "homeTeam": {
+      "id": "H-r32-77",
+      "name": "1I",
+      "emoji": "🏳️"
+    },
+    "awayTeam": {
+      "id": "A-r32-77",
+      "name": "3C/D/F/G/H",
+      "emoji": "🏳️"
+    },
+    "date": "2026-06-30",
+    "time": "17:00 UTC-4",
+    "stadium": "New York/New Jersey (East Rutherford)",
+    "homeScore": null,
+    "awayScore": null,
+    "status": "pending"
+  },
+  {
+    "id": "KO-r32-78",
+    "group": null,
+    "phase": "r32",
+    "homeTeam": {
+      "id": "H-r32-78",
+      "name": "2E",
+      "emoji": "🏳️"
+    },
+    "awayTeam": {
+      "id": "A-r32-78",
+      "name": "2I",
+      "emoji": "🏳️"
+    },
+    "date": "2026-06-30",
+    "time": "12:00 UTC-5",
+    "stadium": "Dallas (Arlington)",
+    "homeScore": null,
+    "awayScore": null,
+    "status": "pending"
+  },
+  {
+    "id": "KO-r32-79",
+    "group": null,
+    "phase": "r32",
+    "homeTeam": {
+      "id": "MEX",
+      "name": "México",
+      "emoji": "🇲🇽"
+    },
+    "awayTeam": {
+      "id": "A-r32-79",
+      "name": "3C/E/F/H/I",
+      "emoji": "🏳️"
+    },
+    "date": "2026-06-30",
+    "time": "19:00 UTC-6",
+    "stadium": "Mexico City",
+    "homeScore": null,
+    "awayScore": null,
+    "status": "pending"
+  },
+  {
+    "id": "KO-r32-80",
+    "group": null,
+    "phase": "r32",
+    "homeTeam": {
+      "id": "H-r32-80",
+      "name": "1L",
+      "emoji": "🏳️"
+    },
+    "awayTeam": {
+      "id": "A-r32-80",
+      "name": "3E/H/I/J/K",
+      "emoji": "🏳️"
+    },
+    "date": "2026-07-01",
+    "time": "12:00 UTC-4",
+    "stadium": "Atlanta",
+    "homeScore": null,
+    "awayScore": null,
+    "status": "pending"
+  },
+  {
+    "id": "KO-r32-81",
+    "group": null,
+    "phase": "r32",
+    "homeTeam": {
+      "id": "USA",
+      "name": "Estados Unidos",
+      "emoji": "🇺🇸"
+    },
+    "awayTeam": {
+      "id": "A-r32-81",
+      "name": "3B/E/F/I/J",
+      "emoji": "🏳️"
+    },
+    "date": "2026-07-01",
+    "time": "17:00 UTC-7",
+    "stadium": "San Francisco Bay Area (Santa Clara)",
+    "homeScore": null,
+    "awayScore": null,
+    "status": "pending"
+  },
+  {
+    "id": "KO-r32-82",
+    "group": null,
+    "phase": "r32",
+    "homeTeam": {
+      "id": "H-r32-82",
+      "name": "1G",
+      "emoji": "🏳️"
+    },
+    "awayTeam": {
+      "id": "A-r32-82",
+      "name": "3A/E/H/I/J",
+      "emoji": "🏳️"
+    },
+    "date": "2026-07-01",
+    "time": "13:00 UTC-7",
+    "stadium": "Seattle",
+    "homeScore": null,
+    "awayScore": null,
+    "status": "pending"
+  },
+  {
+    "id": "KO-r32-83",
+    "group": null,
+    "phase": "r32",
+    "homeTeam": {
+      "id": "H-r32-83",
+      "name": "2K",
+      "emoji": "🏳️"
+    },
+    "awayTeam": {
+      "id": "A-r32-83",
+      "name": "2L",
+      "emoji": "🏳️"
+    },
+    "date": "2026-07-02",
+    "time": "19:00 UTC-4",
+    "stadium": "Toronto",
+    "homeScore": null,
+    "awayScore": null,
+    "status": "pending"
+  },
+  {
+    "id": "KO-r32-84",
+    "group": null,
+    "phase": "r32",
+    "homeTeam": {
+      "id": "H-r32-84",
+      "name": "1H",
+      "emoji": "🏳️"
+    },
+    "awayTeam": {
+      "id": "A-r32-84",
+      "name": "2J",
+      "emoji": "🏳️"
+    },
+    "date": "2026-07-02",
+    "time": "12:00 UTC-7",
+    "stadium": "Los Angeles (Inglewood)",
+    "homeScore": null,
+    "awayScore": null,
+    "status": "pending"
+  },
+  {
+    "id": "KO-r32-85",
+    "group": null,
+    "phase": "r32",
+    "homeTeam": {
+      "id": "H-r32-85",
+      "name": "1B",
+      "emoji": "🏳️"
+    },
+    "awayTeam": {
+      "id": "A-r32-85",
+      "name": "3E/F/G/I/J",
+      "emoji": "🏳️"
+    },
+    "date": "2026-07-02",
+    "time": "20:00 UTC-7",
+    "stadium": "Vancouver",
+    "homeScore": null,
+    "awayScore": null,
+    "status": "pending"
+  },
+  {
+    "id": "KO-r32-86",
+    "group": null,
+    "phase": "r32",
+    "homeTeam": {
+      "id": "H-r32-86",
+      "name": "1J",
+      "emoji": "🏳️"
+    },
+    "awayTeam": {
+      "id": "A-r32-86",
+      "name": "2H",
+      "emoji": "🏳️"
+    },
+    "date": "2026-07-03",
+    "time": "18:00 UTC-4",
+    "stadium": "Miami (Miami Gardens)",
+    "homeScore": null,
+    "awayScore": null,
+    "status": "pending"
+  },
+  {
+    "id": "KO-r32-87",
+    "group": null,
+    "phase": "r32",
+    "homeTeam": {
+      "id": "H-r32-87",
+      "name": "1K",
+      "emoji": "🏳️"
+    },
+    "awayTeam": {
+      "id": "A-r32-87",
+      "name": "3D/E/I/J/L",
+      "emoji": "🏳️"
+    },
+    "date": "2026-07-03",
+    "time": "20:30 UTC-5",
+    "stadium": "Kansas City",
+    "homeScore": null,
+    "awayScore": null,
+    "status": "pending"
+  },
+  {
+    "id": "KO-r32-88",
+    "group": null,
+    "phase": "r32",
+    "homeTeam": {
+      "id": "H-r32-88",
+      "name": "2D",
+      "emoji": "🏳️"
+    },
+    "awayTeam": {
+      "id": "A-r32-88",
+      "name": "2G",
+      "emoji": "🏳️"
+    },
+    "date": "2026-07-03",
+    "time": "13:00 UTC-5",
+    "stadium": "Dallas (Arlington)",
+    "homeScore": null,
+    "awayScore": null,
+    "status": "pending"
+  },
+  {
+    "id": "KO-r16-89",
+    "group": null,
+    "phase": "r16",
+    "homeTeam": {
+      "id": "H-r16-89",
+      "name": "W74",
+      "emoji": "🏳️"
+    },
+    "awayTeam": {
+      "id": "A-r16-89",
+      "name": "W77",
+      "emoji": "🏳️"
+    },
+    "date": "2026-07-04",
+    "time": "17:00 UTC-4",
+    "stadium": "Philadelphia",
+    "homeScore": null,
+    "awayScore": null,
+    "status": "pending"
+  },
+  {
+    "id": "KO-r16-90",
+    "group": null,
+    "phase": "r16",
+    "homeTeam": {
+      "id": "H-r16-90",
+      "name": "W73",
+      "emoji": "🏳️"
+    },
+    "awayTeam": {
+      "id": "A-r16-90",
+      "name": "W75",
+      "emoji": "🏳️"
+    },
+    "date": "2026-07-04",
+    "time": "12:00 UTC-5",
+    "stadium": "Houston",
+    "homeScore": null,
+    "awayScore": null,
+    "status": "pending"
+  },
+  {
+    "id": "KO-r16-91",
+    "group": null,
+    "phase": "r16",
+    "homeTeam": {
+      "id": "H-r16-91",
+      "name": "W76",
+      "emoji": "🏳️"
+    },
+    "awayTeam": {
+      "id": "A-r16-91",
+      "name": "W78",
+      "emoji": "🏳️"
+    },
+    "date": "2026-07-05",
+    "time": "16:00 UTC-4",
+    "stadium": "New York/New Jersey (East Rutherford)",
+    "homeScore": null,
+    "awayScore": null,
+    "status": "pending"
+  },
+  {
+    "id": "KO-r16-92",
+    "group": null,
+    "phase": "r16",
+    "homeTeam": {
+      "id": "H-r16-92",
+      "name": "W79",
+      "emoji": "🏳️"
+    },
+    "awayTeam": {
+      "id": "A-r16-92",
+      "name": "W80",
+      "emoji": "🏳️"
+    },
+    "date": "2026-07-05",
+    "time": "18:00 UTC-6",
+    "stadium": "Mexico City",
+    "homeScore": null,
+    "awayScore": null,
+    "status": "pending"
+  },
+  {
+    "id": "KO-r16-93",
+    "group": null,
+    "phase": "r16",
+    "homeTeam": {
+      "id": "H-r16-93",
+      "name": "W83",
+      "emoji": "🏳️"
+    },
+    "awayTeam": {
+      "id": "A-r16-93",
+      "name": "W84",
+      "emoji": "🏳️"
+    },
+    "date": "2026-07-06",
+    "time": "14:00 UTC-5",
+    "stadium": "Dallas (Arlington)",
+    "homeScore": null,
+    "awayScore": null,
+    "status": "pending"
+  },
+  {
+    "id": "KO-r16-94",
+    "group": null,
+    "phase": "r16",
+    "homeTeam": {
+      "id": "H-r16-94",
+      "name": "W81",
+      "emoji": "🏳️"
+    },
+    "awayTeam": {
+      "id": "A-r16-94",
+      "name": "W82",
+      "emoji": "🏳️"
+    },
+    "date": "2026-07-06",
+    "time": "17:00 UTC-7",
+    "stadium": "Seattle",
+    "homeScore": null,
+    "awayScore": null,
+    "status": "pending"
+  },
+  {
+    "id": "KO-r16-95",
+    "group": null,
+    "phase": "r16",
+    "homeTeam": {
+      "id": "H-r16-95",
+      "name": "W86",
+      "emoji": "🏳️"
+    },
+    "awayTeam": {
+      "id": "A-r16-95",
+      "name": "W88",
+      "emoji": "🏳️"
+    },
+    "date": "2026-07-07",
+    "time": "12:00 UTC-4",
+    "stadium": "Atlanta",
+    "homeScore": null,
+    "awayScore": null,
+    "status": "pending"
+  },
+  {
+    "id": "KO-r16-96",
+    "group": null,
+    "phase": "r16",
+    "homeTeam": {
+      "id": "H-r16-96",
+      "name": "W85",
+      "emoji": "🏳️"
+    },
+    "awayTeam": {
+      "id": "A-r16-96",
+      "name": "W87",
+      "emoji": "🏳️"
+    },
+    "date": "2026-07-07",
+    "time": "13:00 UTC-7",
+    "stadium": "Vancouver",
+    "homeScore": null,
+    "awayScore": null,
+    "status": "pending"
+  },
+  {
+    "id": "KO-qf-97",
+    "group": null,
+    "phase": "qf",
+    "homeTeam": {
+      "id": "H-qf-97",
+      "name": "W89",
+      "emoji": "🏳️"
+    },
+    "awayTeam": {
+      "id": "A-qf-97",
+      "name": "W90",
+      "emoji": "🏳️"
+    },
+    "date": "2026-07-09",
+    "time": "16:00 UTC-4",
+    "stadium": "Boston (Foxborough)",
+    "homeScore": null,
+    "awayScore": null,
+    "status": "pending"
+  },
+  {
+    "id": "KO-qf-98",
+    "group": null,
+    "phase": "qf",
+    "homeTeam": {
+      "id": "H-qf-98",
+      "name": "W93",
+      "emoji": "🏳️"
+    },
+    "awayTeam": {
+      "id": "A-qf-98",
+      "name": "W94",
+      "emoji": "🏳️"
+    },
+    "date": "2026-07-10",
+    "time": "12:00 UTC-7",
+    "stadium": "Los Angeles (Inglewood)",
+    "homeScore": null,
+    "awayScore": null,
+    "status": "pending"
+  },
+  {
+    "id": "KO-qf-99",
+    "group": null,
+    "phase": "qf",
+    "homeTeam": {
+      "id": "H-qf-99",
+      "name": "W91",
+      "emoji": "🏳️"
+    },
+    "awayTeam": {
+      "id": "A-qf-99",
+      "name": "W92",
+      "emoji": "🏳️"
+    },
+    "date": "2026-07-11",
+    "time": "17:00 UTC-4",
+    "stadium": "Miami (Miami Gardens)",
+    "homeScore": null,
+    "awayScore": null,
+    "status": "pending"
+  },
+  {
+    "id": "KO-qf-100",
+    "group": null,
+    "phase": "qf",
+    "homeTeam": {
+      "id": "H-qf-100",
+      "name": "W95",
+      "emoji": "🏳️"
+    },
+    "awayTeam": {
+      "id": "A-qf-100",
+      "name": "W96",
+      "emoji": "🏳️"
+    },
+    "date": "2026-07-11",
+    "time": "20:00 UTC-5",
+    "stadium": "Kansas City",
+    "homeScore": null,
+    "awayScore": null,
+    "status": "pending"
+  },
+  {
+    "id": "KO-sf-101",
+    "group": null,
+    "phase": "sf",
+    "homeTeam": {
+      "id": "H-sf-101",
+      "name": "W97",
+      "emoji": "🏳️"
+    },
+    "awayTeam": {
+      "id": "A-sf-101",
+      "name": "W98",
+      "emoji": "🏳️"
+    },
+    "date": "2026-07-14",
+    "time": "14:00 UTC-5",
+    "stadium": "Dallas (Arlington)",
+    "homeScore": null,
+    "awayScore": null,
+    "status": "pending"
+  },
+  {
+    "id": "KO-sf-102",
+    "group": null,
+    "phase": "sf",
+    "homeTeam": {
+      "id": "H-sf-102",
+      "name": "W99",
+      "emoji": "🏳️"
+    },
+    "awayTeam": {
+      "id": "A-sf-102",
+      "name": "W100",
+      "emoji": "🏳️"
+    },
+    "date": "2026-07-15",
+    "time": "15:00 UTC-4",
+    "stadium": "Atlanta",
+    "homeScore": null,
+    "awayScore": null,
+    "status": "pending"
+  },
+  {
+    "id": "KO-3rd-103",
+    "group": null,
+    "phase": "3rd",
+    "homeTeam": {
+      "id": "H-3rd-103",
+      "name": "L101",
+      "emoji": "🏳️"
+    },
+    "awayTeam": {
+      "id": "A-3rd-103",
+      "name": "L102",
+      "emoji": "🏳️"
+    },
+    "date": "2026-07-18",
+    "time": "17:00 UTC-4",
+    "stadium": "Miami (Miami Gardens)",
+    "homeScore": null,
+    "awayScore": null,
+    "status": "pending"
+  },
+  {
+    "id": "KO-final-104",
+    "group": null,
+    "phase": "final",
+    "homeTeam": {
+      "id": "H-final-104",
+      "name": "W101",
+      "emoji": "🏳️"
+    },
+    "awayTeam": {
+      "id": "A-final-104",
+      "name": "W102",
+      "emoji": "🏳️"
+    },
+    "date": "2026-07-19",
+    "time": "15:00 UTC-4",
+    "stadium": "New York/New Jersey (East Rutherford)",
+    "homeScore": null,
+    "awayScore": null,
+    "status": "pending"
+  }
+];
