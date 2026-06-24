@@ -29,6 +29,13 @@ onMounted(async () => {
     if (saved) {
       localPredictions.value = JSON.parse(JSON.stringify(saved))
     }
+    
+    // Initialize empty predictions for all matches
+    matchesStore.matches.forEach(m => {
+      if (!localPredictions.value[m.id]) {
+        localPredictions.value[m.id] = { homeScore: '', awayScore: '' }
+      }
+    })
   }
 })
 
@@ -97,12 +104,9 @@ async function handleSave() {
   }
 }
 
-// Quick fill model handler helper
-function updateLocalPred(matchId, side, val) {
-  if (!localPredictions.value[matchId]) {
-    localPredictions.value[matchId] = { homeScore: '', awayScore: '' }
-  }
-  localPredictions.value[matchId][side] = val
+// Returns the reactive prediction object for a match
+function getPrediction(matchId) {
+  return localPredictions.value[matchId] || { homeScore: '', awayScore: '' }
 }
 </script>
 
@@ -170,6 +174,18 @@ function updateLocalPred(matchId, side, val) {
       </button>
     </div>
 
+    <!-- Bottom save button -->
+    <div class="flex justify-center pt-4 pb-8">
+      <button 
+        @click="handleSave"
+        class="w-full max-w-md px-6 py-3 text-sm font-bold text-dark-deep bg-gradient-to-r from-gold-300 via-gold-400 to-gold-500 hover:from-gold-400 hover:to-gold-600 rounded-xl shadow-lg hover:shadow-gold-500/10 disabled:opacity-50 transition-all flex items-center justify-center space-x-2"
+        :disabled="saving"
+      >
+        <span v-if="saving" class="animate-spin h-4 w-4 border-2 border-dark-deep border-t-transparent rounded-full"></span>
+        <span>{{ saving ? 'Guardando...' : 'Guardar Predicciones 💾' }}</span>
+      </button>
+    </div>
+
     <!-- Content: Groups Tab -->
     <div v-if="activeTab === 'groups'" class="space-y-6">
       <!-- Group letters select slider (A - L) -->
@@ -200,11 +216,7 @@ function updateLocalPred(matchId, side, val) {
             :key="match.id"
             :match="match"
             :isPredicting="true"
-            :modelValue="localPredictions[match.id] || { homeScore: '', awayScore: '' }"
-            @update:modelValue="(val) => {
-              updateLocalPred(match.id, 'homeScore', val.homeScore);
-              updateLocalPred(match.id, 'awayScore', val.awayScore);
-            }"
+            :modelValue="getPrediction(match.id)"
           />
         </div>
 
@@ -235,11 +247,7 @@ function updateLocalPred(matchId, side, val) {
           :key="match.id"
           :match="match"
           :isPredicting="true"
-          :modelValue="localPredictions[match.id] || { homeScore: '', awayScore: '' }"
-          @update:modelValue="(val) => {
-            updateLocalPred(match.id, 'homeScore', val.homeScore);
-            updateLocalPred(match.id, 'awayScore', val.awayScore);
-          }"
+          :modelValue="getPrediction(match.id)"
         />
       </div>
     </div>
