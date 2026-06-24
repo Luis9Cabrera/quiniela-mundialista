@@ -49,6 +49,12 @@ const routes = [
     name: 'admin',
     component: () => import('../views/AdminView.vue'),
     meta: { requiresAuth: true }
+  },
+  {
+    path: '/quiniela/:id/compare',
+    name: 'compare',
+    component: () => import('../views/CompareView.vue'),
+    meta: { requiresAuth: true }
   }
 ]
 

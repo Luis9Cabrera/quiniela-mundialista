@@ -213,6 +213,21 @@ export const useQuinielaStore = defineStore('quiniela', () => {
     }
   }
 
+  // Fetch all predictions in a quiniela
+  async function getAllPredictions(quinielaId) {
+    try {
+      const querySnapshot = await getDocs(collection(db, `quinielas/${quinielaId}/predictions`))
+      const all = []
+      querySnapshot.forEach((doc) => {
+        all.push(doc.data())
+      })
+      return all
+    } catch (error) {
+      console.error('Error al obtener todas las predicciones:', error)
+      return []
+    }
+  }
+
   // Calculate scores and create leaderboard
   async function fetchLeaderboard(quinielaId) {
     if (!currentQuiniela.value) return
@@ -304,6 +319,7 @@ export const useQuinielaStore = defineStore('quiniela', () => {
     savePredictions,
     saveOfficialResults,
     getUserPredictions,
+    getAllPredictions,
     fetchLeaderboard
   }
 })

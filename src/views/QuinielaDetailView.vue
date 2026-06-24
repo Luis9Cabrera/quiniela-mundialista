@@ -110,6 +110,17 @@ const membersList = computed(() => {
 
         <!-- Dashboard Shortcut Cards -->
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+          <!-- Compare Predictions Card -->
+          <router-link 
+            :to="{ name: 'compare', params: { id: quinielaStore.currentQuiniela.id } }"
+            class="glass-card bg-dark-card border border-dark-border/80 hover:border-indigo-500/20 rounded-2xl p-5 text-center group transition-all duration-300 shadow-md hover:-translate-y-0.5"
+          >
+            <div class="inline-flex items-center justify-center w-10 h-10 rounded-xl bg-indigo-500/10 border border-indigo-500/20 text-lg mb-3">
+              👁️
+            </div>
+            <h4 class="font-bold text-white text-sm mb-1 group-hover:text-indigo-400 transition-colors">Comparar</h4>
+            <p class="text-[10px] text-slate-400">Revisa los pronósticos de todos los jugadores</p>
+          </router-link>
           <!-- Predictions View Card -->
           <router-link 
             :to="{ name: 'predict', params: { id: quinielaStore.currentQuiniela.id } }"

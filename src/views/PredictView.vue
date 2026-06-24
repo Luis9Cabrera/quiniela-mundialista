@@ -60,6 +60,15 @@ const currentGroupMatches = computed(() => {
   })
 })
 
+// Official results for GroupTable
+const officialGroupMatches = computed(() => {
+  return matchesStore.getMatchesByGroup(activeGroup.value).map(m => ({
+    ...m,
+    homeScore: m.homeScore,
+    awayScore: m.awayScore
+  }))
+})
+
 const knockoutMatches = computed(() => {
   // Returns all matches in elimination phases, mapping user prediction scores
   const allKo = matchesStore.matches.filter(m => m.phase !== 'groups')
@@ -229,7 +238,7 @@ function getPrediction(matchId) {
           <GroupTable 
             :groupKey="activeGroup"
             :group="currentGroupData"
-            :matches="currentGroupMatches"
+            :matches="officialGroupMatches"
           />
         </div>
       </div>
